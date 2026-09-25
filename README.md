@@ -2,9 +2,15 @@
 
 A complete Extract-Transform-Load pipeline that ingests order data from a messy CSV export and a live public API, applies real data-quality validation, and loads it into a SQLite warehouse — with a monitoring dashboard for running and observing pipeline health.
 
-🔗 **Live Demo:** [Add your Streamlit Cloud link] — click "Run Pipeline Now" on first load to initialize the warehouse.
+🔗 **Live Demo:** https://etl-data-pipeline-nknqzkjtmtstwnqbjycbbs.streamlit.app/
 
-![Pipeline Dashboard Preview](screenshots/ss_1.png)
+** Dashboard Preview ** : 
+
+<img width="1917" height="902" alt="Screenshot 2026-09-26 033453" src="https://github.com/user-attachments/assets/8b5a06fc-528e-475f-bd37-b47739896c36" />
+<img width="1911" height="896" alt="Screenshot 2026-09-26 033510" src="https://github.com/user-attachments/assets/be1a1fef-7286-451b-9067-9746c9d8290a" />
+<img width="1897" height="901" alt="Screenshot 2026-09-26 033524" src="https://github.com/user-attachments/assets/736daadc-4140-4e5f-bc77-74a6fd449844" />
+<img width="1917" height="910" alt="Screenshot 2026-09-26 033536" src="https://github.com/user-attachments/assets/835a32b7-c4e2-49e6-b64d-c5c35aa23fe1" />
+<img width="1912" height="901" alt="Screenshot 2026-09-26 033548" src="https://github.com/user-attachments/assets/a9502868-db42-4e27-990a-6d5e302b8928" />
 
 ## Overview
 
