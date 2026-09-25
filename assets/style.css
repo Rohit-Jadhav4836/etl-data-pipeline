@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg-deep: #0b0e14;
+  --bg-panel: #12151d;
+  --border-col: rgba(255,255,255,0.08);
+  --accent-blue: #4f8cff;
+  --accent-green: #2ecc71;
+  --accent-red: #ff5c5c;
+  --accent-amber: #f5a623;
+  --text-color: #d7dae0;
+  --text-dim: #7d8494;
+}
+
+html, body, [class*="css"] { font-family: 'Inter', sans-serif !important; }
+code, .mono { font-family: 'JetBrains Mono', monospace !important; }
+
+[data-testid="stAppViewContainer"] { background: var(--bg-deep); }
+[data-testid="stAppViewContainer"] * { color: var(--text-color); }
+[data-testid="stSidebar"] { background: var(--bg-panel) !important; border-right: 1px solid var(--border-col) !important; }
+[data-testid="stHeader"] { background: var(--bg-deep) !important; }
+
+h1, h2, h3 { font-weight: 700 !important; }
+
+/* ===== DAG pipeline visual: Extract -> Transform -> Load ===== */
+.dag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 0 8px 0;
+}
+.dag-node {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-col);
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-align: center;
+  min-width: 120px;
+}
+.dag-node .dag-label { font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+.dag-node .dag-icon { font-size: 22px; margin-bottom: 6px; }
+.dag-arrow { color: var(--text-dim); font-size: 20px; }
+.dag-node.extract { border-color: rgba(79,140,255,0.4); }
+.dag-node.transform { border-color: rgba(245,166,35,0.4); }
+.dag-node.load { border-color: rgba(46,204,113,0.4); }
+
+/* ===== Status pills ===== */
+.status-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.5px;
+}
+.status-pill.success { background: rgba(46,204,113,0.15); color: var(--accent-green); border: 1px solid rgba(46,204,113,0.4); }
+.status-pill.failed { background: rgba(255,92,92,0.15); color: var(--accent-red); border: 1px solid rgba(255,92,92,0.4); }
+.status-pill.running { background: rgba(245,166,35,0.15); color: var(--accent-amber); border: 1px solid rgba(245,166,35,0.4); }
+
+/* ===== Panels ===== */
+[data-testid="stMetric"], [data-testid="stVerticalBlockBorderWrapper"] {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-col);
+  border-radius: 12px;
+}
+[data-testid="stMetric"] { padding: 16px; }
+[data-testid="stVerticalBlockBorderWrapper"] { padding: 16px; min-height: 60px; }
+[data-testid="stMetricValue"] { font-family: 'JetBrains Mono', monospace !important; }
+
+.stButton button {
+  background: var(--accent-blue) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+}
+
+/* ===== Log console box ===== */
+.log-console {
+  background: #06080c;
+  border: 1px solid var(--border-col);
+  border-radius: 10px;
+  padding: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  line-height: 1.6;
+  max-height: 320px;
+  overflow-y: auto;
+  color: #9fe6b3;
+  white-space: pre-wrap;
+}
+
+hr { border: none !important; border-top: 1px solid var(--border-col) !important; }
+.js-plotly-plot, .plot-container { background: transparent !important; }
