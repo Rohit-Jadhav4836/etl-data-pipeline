@@ -4,7 +4,7 @@ A complete Extract-Transform-Load pipeline that ingests order data from a messy 
 
 🔗 **Live Demo:** https://etl-data-pipeline-nknqzkjtmtstwnqbjycbbs.streamlit.app/
 
-** Dashboard Preview ** : 
+**Dashboard Preview** : 
 
 <img width="1917" height="902" alt="Screenshot 2026-09-26 033453" src="https://github.com/user-attachments/assets/8b5a06fc-528e-475f-bd37-b47739896c36" />
 <img width="1911" height="896" alt="Screenshot 2026-09-26 033510" src="https://github.com/user-attachments/assets/be1a1fef-7286-451b-9067-9746c9d8290a" />
